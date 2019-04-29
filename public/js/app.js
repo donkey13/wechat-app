@@ -1,2 +1,1 @@
-// public/js/app.js
-angular.module('wechatapp', ['ngRoute', 'appRoutes', 'mainCtrl', 'travelCtrl', 'travelService']);
+angular.module('sampleApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'TravelCtrl', 'TravelService', 'GeekCtrl', 'GeekService']);

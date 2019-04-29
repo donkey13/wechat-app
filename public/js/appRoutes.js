@@ -1,20 +1,23 @@
-// public/js/appRoutes.js
 angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
-    $routeProvider
+	$routeProvider
 
-        // home page
-        .when('/', {
-            templateUrl: 'views/home.html',
-            controller: 'MainController'
-        })
+		// home page
+		.when('/', {
+			templateUrl: 'views/home.html',
+			controller: 'MainController'
+		})
 
-        // nerds page that will use the TravelController
-        .when('/travels', {
-            templateUrl: 'views/travel.html',
-            controller: 'TravelController'
-        });
+		.when('/travels', {
+			templateUrl: 'views/travel.html',
+			controller: 'TravelController'
+		})
 
-    $locationProvider.html5Mode(true);
+		.when('/geeks', {
+			templateUrl: 'views/geek.html',
+			controller: 'GeekController'	
+		});
+
+	$locationProvider.html5Mode(true);
 
 }]);

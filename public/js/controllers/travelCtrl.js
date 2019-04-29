@@ -1,6 +1,5 @@
-// public/js/controllers/travelCtrl.js
-angular.module('travelCtrl', []).controller('TravelController', function($scope) {
+angular.module('TravelCtrl', []).controller('TravelController', function($scope) {
 
-    $scope.tagline = 'Travel iterneray!';
+	$scope.tagline = 'Nothing beats a pocket protector!';
 
 });
