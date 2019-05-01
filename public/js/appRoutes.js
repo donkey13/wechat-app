@@ -13,9 +13,9 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'TravelController'
 		})
 
-		.when('/geeks', {
-			templateUrl: 'views/geek.html',
-			controller: 'GeekController'	
+		.when('/processed', {
+			templateUrl: 'views/processed.html',
+			controller: 'ProcessedController'	
 		});
 
 	$locationProvider.html5Mode(true);

@@ -1,5 +1,17 @@
 <div class="jumbotron text-center">
-	<h1>Travels and Proud</h1>
+	<h1>待审批旅行</h1>
 
 	<p>{{ tagline }}</p>
+
+
+	<label ng-repeat="travelDes in travels">
+		<input
+		  type="checkbox"
+		  name="selectedFruits[]"
+		  value="{{travelDes}}"
+		  ng-checked="selection.indexOf(travelDes) > -1"
+		  ng-click="toggleSelection(travelDes)"
+		> {{travelDes}}
+	  </label>
+
 </div>
